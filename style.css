@@ -1,0 +1,74 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    margin: 2% auto; /* Centrer le tableau horizontalement */
+}
+
+tbody {
+    background-color: #F2F2F2;
+    width: fit-content; /* ou une largeur fixe appropriée */
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid rgba(105, 108, 130, 0.449);
+}
+
+
+tr{
+    display: block;
+}
+
+tr:nth-of-type(3), tr:nth-of-type(6){
+    border-bottom: 2px solid rgba(105, 108, 130, 0.449);
+}
+
+td:nth-of-type(3), td:nth-of-type(6){
+    border-right: 2px solid rgba(105, 108, 130, 0.449);
+}
+
+td input{
+    border: 1px solid rgb(210, 210, 210);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Retirer les flèches Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Retirer les flèches Firefox */
+input[type=number] {
+    appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input:invalid{
+    background-color: rgba(255, 91, 91, 0.674);
+}
+
+#button-verifier{
+    display: block;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(219, 233, 225);
+    color: rgb(55, 132, 89);
+    background-color: rgb(222, 247, 232);
+    border-radius: 5px;
+    transition: background-color 200ms ease-in;
+}
+
+#button-verifier:hover{
+    border: 1px solid rgb(219, 233, 225);
+    color: rgb(210, 234, 220);
+    background-color: rgb(36, 55, 44);
+}
+
